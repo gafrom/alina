@@ -1,10 +1,12 @@
 doctype html
 html
   head
-    title
-      | Alina
+    title Alina
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = render 'google_fonts'
   body
+    = render 'header'
     = yield
+    = render 'footer'
