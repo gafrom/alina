@@ -1,3 +1,114 @@
-.main-nav {
-  
+.container.welcome {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  padding: 0;
+
+  .block {
+    position: relative;
+    width: 100%;
+  }
+
+  .first-block {
+    height: 668px;
+    background-image: asset-url('welcome.jpg');
+    background-size: 111%;
+
+    .filmy-stuff {
+      position: absolute;
+      width: 400px;
+      padding: 0 100px 90px;
+      margin-top: 0;
+      background: rgba(0,123,126,.88);
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      .title {
+        top: 30%;
+        position: relative;
+
+        .heading {
+          font-size: 6em;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .second-block {
+    padding-top: 70px;
+
+    &:before {
+      content: '';
+      background: #d6df23;
+      position: absolute;
+      top: 0;
+      height: 668px;
+      width: 100%;
+    }
+
+    .container {
+      .inner_first-block {
+        width: 50%;
+
+        .images {
+          position: relative;
+          height: 600px;
+
+          .image {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            color: #d6df23;
+
+            &:nth-child(1) {
+              top: 0;
+              left: 0;
+              background: #434040;
+
+              .container {
+                .heading {
+                  font-family: 'Lobster', cursive;
+                  font-size: 4em;
+                  color: #d6df23;
+                }
+
+                .message {
+                  color: #007b7e;
+                  font-size: 1.5em;
+                  line-height: 1.2em;
+                }
+              }
+            }
+            &:nth-child(2) {
+              top: 0;
+              right: 0;
+              background-image: asset-url('square_image1.jpg');
+            }
+            &:nth-child(3) {
+              bottom: 0;
+              left: 0;
+              background-image: asset-url('square_image2.jpg');
+            }
+            &:nth-child(4) {
+              bottom: 0;
+              right: 0;
+              background-image: asset-url('square_image3.jpg');
+            }
+          }
+        }
+      }
+      .inner_second-block {
+        width: 50%;
+        margin-left: 0;
+        background-image: asset-url('welcome1.jpg');
+        background-size: 209%;
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: 32%;
+      }
+    }
+  }
 }
