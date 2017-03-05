@@ -30,6 +30,11 @@
           font-size: 6em;
           color: white;
         }
+
+        .title {
+          font-size: 2em;
+          color: #d6df23;
+        }
       }
     }
   }
@@ -47,6 +52,8 @@
     }
 
     .container {
+      padding: 0 50px;
+
       .inner_first-block {
         width: 50%;
 
