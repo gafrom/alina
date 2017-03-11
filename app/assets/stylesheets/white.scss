@@ -1,0 +1,83 @@
+.left_letters {
+  font-family: 'Playfair Display', serif;
+  color: #4e4544;
+  top: 50px;
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+  .small_text {
+    font-size: 15px;
+    font-weight: normal;
+    width: 100px;
+  }
+}
+
+
+.container.welcome {
+  color: #4e4544;
+  font-family: 'droid_serifregular', sans-serif;
+  padding: 0;
+
+  .block {
+    position: relative;
+    width: 100%;
+  }
+
+
+
+  .first-block {
+    padding-top: 200px;
+
+    &__inner {
+      margin: 0 13em;
+      display: inline-block;
+      text-align: left;
+      max-width: 80%;
+
+      .main_text {
+        font-weight: 700;
+        font-size: 60px;
+        position: relative;
+
+        .shadow {
+          position: absolute;
+          font-size: 300%;
+          color: whitesmoke;
+          top: -150px;
+          left: 150px;
+          z-index: -1;
+        }
+      }
+
+
+      .occupacy {
+        font-weight: 400;
+        font-size: 30px;
+        width: 799px;
+        display: inline-block;
+      }
+
+      .social_links__list {
+        padding: 0;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          border-bottom: 2px solid rosybrown;
+          width: 200px;
+          margin-right: 30px;
+          position: relative;
+          top: -3px;
+        }
+
+        &_item {
+          margin: 0 30px;
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+}
+
+

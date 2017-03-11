@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'droid_serifregular';
+    src: asset-url('assets/fonts/droidserif_regular/DroidSerif-Regular-webfont.eot');
+    src: asset-url('assets/fonts/droidserif_regular/DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('assets/fonts/droidserif_regular/DroidSerif-Regular-webfont.woff') format('woff'),
+         asset-url('assets/fonts/droidserif_regular/DroidSerif-Regular-webfont.ttf') format('truetype'),
+         asset-url('assets/fonts/droidserif_regular/DroidSerif-Regular-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

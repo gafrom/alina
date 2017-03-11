@@ -1,9 +1,14 @@
 header
   .container.flex
-    nav.main-nav
-      ul.main-menu
-        li.menu-item= link_to 'Обо мне', '#'
-        li.menu-item= link_to 'Услуги и цены', '#'
-        li.menu-item= link_to 'Отзывы', '#'
-        li.menu-item= link_to 'Блог', '#'
-        li.menu-item= link_to 'Контакты', '#'
+    .header__content
+
+      .header__title
+        span.header__title_initials AA.
+        span.header__title_name Алина Афанасьева
+
+      nav.header__nav
+        ul
+          li.nav_item= link_to 'Обо мне', '#'
+          li.nav_item= link_to 'Отзывы', '#'
+          li.nav_item= link_to 'Блог', '#'
+          li.nav_item= link_to 'Контакты', '#'
