@@ -3,12 +3,13 @@ header
     .header__content
 
       .header__title
-        span.header__title_initials AA.
-        span.header__title_name Алина Афанасьева
+        = link_to root_path do
+          span.header__title_initials AA.
+          span.header__title_name Алина Афанасьева
 
       nav.header__nav
         ul
-          li.nav_item= link_to 'Обо мне', '#'
+          li.nav_item= link_to 'Обо мне', '#about'
           li.nav_item= link_to 'Отзывы', '#'
           li.nav_item= link_to 'Блог', '#'
           li.nav_item= link_to 'Контакты', '#'
