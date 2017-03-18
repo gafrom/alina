@@ -24,8 +24,12 @@
 
     .main_text {
       font-weight: 700;
-      font-size: 60px;
       position: relative;
+      font-size: 40px;
+
+      @media (min-width: 1024px) {
+        font-size: 60px;
+      }
 
       .shadow {
         position: absolute;
@@ -99,9 +103,6 @@
     margin-top: 60px;
     padding-top: 130px;
     background-color: indianred;
-    // background-image: asset-url('about_image_small.jpg');
-    // background-repeat: no-repeat;
-    // background-size: 100%;
 
     &__inner {
       color: white;
@@ -143,7 +144,7 @@
       &__reviewee {
         &__avatar {
           display: inline-block;
-          background-image: asset-url('photo2a');
+          background-image: asset-url('ksenia');
           height: 100px;
           width: 100px;
           border-radius: 100px;
