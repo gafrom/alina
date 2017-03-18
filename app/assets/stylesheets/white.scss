@@ -96,21 +96,27 @@
 
   .about-block {
     min-height: 800px;
-    margin-top: 150px;
-    padding-top: 60px;
-    background-image: asset-url('about_image_small.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    margin-top: 60px;
+    padding-top: 130px;
+    background-color: indianred;
+    // background-image: asset-url('about_image_small.jpg');
+    // background-repeat: no-repeat;
+    // background-size: 100%;
 
     &__inner {
       color: white;
       margin: 0 4em;
 
+      &__image {
+        box-shadow: 3px 3px 6px #0003;
+        width: 100%;
+      }
+
       .main_text {
         .shadow {
-          z-index: 0;
+          z-index: 1;
           color: #bcbcbc4d;
-          top: -190px;
+          top: -120px;
         }
       }
 
@@ -122,6 +128,66 @@
 
         .stuck-to-bottom {
           vertical-align: bottom;
+        }
+      }
+    }
+  }
+  .reviews-block {
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+    .review {
+      max-width: 600px;
+      margin: auto;
+
+      &__reviewee {
+        &__avatar {
+          display: inline-block;
+          background-image: asset-url('photo2a');
+          height: 100px;
+          width: 100px;
+          border-radius: 100px;
+          box-shadow: 2px 2px 5px lightgrey;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &__about {
+          display: inline-block;
+          position: absolute;
+          transform: translateY(50%);
+          margin-left: 2em;
+
+          &__name {
+            font-size: 16px;
+          }
+          &__occupation {
+            font-size: 14px;
+            color: lightgrey;
+          }
+        }
+      }
+      &__quote {
+        margin: 10px 40px;
+        position: relative;
+        font-style: italic;
+
+        &::before {
+          content: '«';
+          font-style: italic;
+          position: absolute;
+          left: -1em;
+          color: grey;
+          font-size: 60px;
+          top: 10%;
+        }
+        &::after {
+          content: '»';
+          font-style: italic;
+          color: grey;
+          font-size: 60px;
+          position: absolute;
+          right: -.7em;
+          bottom: 10%;
         }
       }
     }
