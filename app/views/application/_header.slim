@@ -1,15 +1,17 @@
 header
   .container.flex
-    .header__content
+    .header
+
+      nav.header__nav
+        ul.header__nav__ul
+          li.nav_item= link_to 'Обо мне', '#about'
+          li.nav_item= link_to 'Отзывы', '#reviews'
+          li.nav_item= link_to 'Блог', '#blog'
+          li.nav_item= link_to 'Контакты', '#contacts'
 
       .header__title
         = link_to root_path do
           span.header__title_initials AA.
           span.header__title_name Алина Афанасьева
 
-      nav.header__nav
-        ul
-          li.nav_item= link_to 'Обо мне', '#about'
-          li.nav_item= link_to 'Отзывы', '#reviews'
-          li.nav_item= link_to 'Блог', '#blog'
-          li.nav_item= link_to 'Контакты', '#contacts'
+      .header__mobile_menu_btn.icon.icon-menu.js-toggle-mobile-menu

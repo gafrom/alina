@@ -4,11 +4,11 @@ header {
     align-items: flex-start;
     padding: 40px;
 
-    .header__content {
+    .header {
       position: relative;
       width: 100%;
 
-      .header__title {
+      &__title {
         font-family: 'robotoregular';
         font-size: 20px;
         text-transform: uppercase;
@@ -29,22 +29,95 @@ header {
         }
       }
 
-      .header__nav {
-        font-family: 'roboto_condensedbold';
+      &__mobile_menu_btn {
+        z-index: 100;
         position: absolute;
         right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 20px;
-        text-transform: uppercase;
+        top: 2px;
+        font-size: 35px;
+        cursor: pointer;
 
-        ul {
-          margin: 0;
+        /* Larger than desktop */
+        @media (min-width: 1000px) {
+          display: none;
         }
 
+        &:hover {
+          color: deeppink;
+        }
+      }
+
+      &__nav {
+        z-index: 1;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        right: 0;
+        left: 0;
+        top: -250px;
+        height: 0px;
+        transition: .3s top, .3s height;
+        transform: none;
+        font-family: 'roboto_condensedbold';
+        text-transform: uppercase;
+
+        @media (min-width: 1000px) {
+          left: auto;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+
+          &_active {
+            top: 50%;
+            height: auto;
+
+            .header__nav__ul {
+              .nav_item {
+                display: inline-block;
+                padding: 10px 30px;
+              }
+            }
+          }
+        }
+
+        &__ul {
+          margin: 0;
+          padding: 0;
+          font-size: 30px;
+
+          @media (min-width: 1000px) {
+            margin: 0;
+            font-size: 20px;
+          }
+        }
+
+        &_active {
+          top: 0px;
+          height: 280px;
+
+          .header__nav__ul {
+            margin: 10px 0 0;
+
+            .nav_item {
+              display: block;
+              margin: 20px 0;
+              text-align: center;
+
+              &:first-child { margin-top: 0; }
+              &:last-child { margin-bottom: 0; }
+            }
+          }
+        }
+
+
         .nav_item {
-          display: inline-block;
-          padding: 10px 30px;
+          display: none;
+
+          @media (min-width: 1000px) {
+            display: inline-block;
+            padding: 10px 30px;
+          }
         }
       }
     }
